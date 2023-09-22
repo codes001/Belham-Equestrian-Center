@@ -386,7 +386,7 @@ footer .copyright {
 .closeBtn img {
   width: 20px;
   position: fixed;
-  top: 20px;
+  top: 50px;
   right: 25px;
 }
 
@@ -400,7 +400,7 @@ footer .copyright {
   right: 0;
   left: auto;
   z-index: 1000;
-  padding-top: 20rem;
+  padding-top: 5rem !important;
   padding: 1rem;
   transform: translateX(200%);
   transition: .5s ease-in-out;
@@ -414,6 +414,10 @@ footer .copyright {
 .mobileNav ul li {
   padding: 1rem;
   border-bottom: 1px solid #ccc;
+}
+
+.mobileNav ul li a{
+  color: #00637C;
 }
 
 @media(min-width:900px) {
