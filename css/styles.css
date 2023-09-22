@@ -392,7 +392,8 @@ footer .copyright {
 
 .mobileNav {
   background-color: #fff;
-  width: 40%;
+  width: 50%;
+  max-width: 50%;
   height: 100%;
   position: fixed;
   top: 0;
