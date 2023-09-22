@@ -1,0 +1,159 @@
+.slider-container {
+    width: 100%;
+    height: 85vh;
+    margin-bottom: 3.5rem;
+    position: relative;
+    background-image: linear-gradient(rgba(3, 8, 12, 0.75), rgba(11, 13, 28, 0.322)),
+      url(/assets/z.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+.about-us {
+    margin: 4rem 0;
+}
+
+.about-us .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+
+.accordionMain {
+    margin: 10rem 0 7rem;
+}
+
+.accordionMain .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.accordion-img {
+    background: url(/assets/horse-1.jpg);
+    border-radius: 10px;
+    color: #fff;
+    padding: 2rem;
+    transition: .3s ease;
+}
+
+article {
+    align-self: flex-start;
+}
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.about-header::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    width: 3px;
+    height: 100%;
+    background-color: var(--primary);
+}
+
+.about-text {
+    text-align: justify;
+}
+
+.article-wrap {
+    padding-top: 70px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+.article-wrap h1 {
+    text-align: left;
+    font-size: 20px;
+
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 1rem;
+    margin-bottom: 20px;
+}
+
+.faq-title {
+    font-size: 14px;
+    cursor: pointer;
+    margin: 2rem 0;
+    font-weight: 600;
+    border-bottom: 1px dotted #333;
+    text-align: left;
+}
+
+.faq-text {
+    display: none;
+    padding: 1rem 2rem;
+    padding-top: 0;
+    line-height: 28px;
+}
+
+
+article h4 {
+    font-size: 14px;
+    text-align: left;
+}
+
+
+.wrapper {
+    padding: 70px 0;
+    overflow-x: hidden;
+}
+
+
+.my-slider {
+    padding: 0 70px;
+}
+
+.slick-initialized .slick-slide {
+    background-color: none;
+    color: #FFF;
+    height: 200px;
+    margin: 0 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.slick-next,
+.slick-prev {
+    z-index: 5;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+.slick-prev {
+    left: 15px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    color: #000;
+    font-size: 26px;
+}
+
+/* MEDIA QUERIES */
+@media(max-width:768px){
+    .accordionMain .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .about-us .container {
+        display: grid;
+        grid-template-columns:  1fr;
+        gap: 1rem;
+    
+    }
+}
