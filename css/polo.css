@@ -150,6 +150,9 @@
     /* background: lime; */
 }
 @media (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
     .switch-container {
        
         /* width: 360px; */
