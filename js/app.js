@@ -55,26 +55,6 @@ contactForm.addEventListener('submit', (e) => {
         }
 })
 
-//TAB FUNCTIONALITY
-function showTab(tabIndex) {
-    const tabs = document.querySelectorAll('.tab');
-    const tabButtons = document.querySelectorAll('.tab-button');
-
-    tabs.forEach((tab, index) => {
-        if (index === tabIndex) {
-            tab.style.display = 'block';
-           
-        } else {
-            tab.style.display = 'none';
-          
-        }
-    });
-
-  
-}
-
-// Show the first tab by default
-showTab([0]);
 
 // FAQ SECTION
 function toggleSection(faqNumber) {

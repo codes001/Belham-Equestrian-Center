@@ -41,44 +41,6 @@
     margin-top: 2rem;
   }
 
-  .tabs {
-    display: flex;
-    justify-content: center;
-    background-color: var(--primary);
-    gap:3rem;
-    max-width: 65%;
-    margin: auto;
-    cursor: pointer;
-}
-
-.tab-button {
-    padding: .7rem 1rem;
-    border: none;
-    
-}
-
-.tab-button:hover {
-    background-color: var(--primaryVariant);
-}
-
-.tab-content {
-    color: teal;
-    max-width: 65%;
-    margin: auto;
-    
-}
-.tab-content #tab1{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-.tab {
-    color: var(--primary);
-    padding: 2rem;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: 4px 10px 50px rgba(69, 66, 66, 0.35);
-    }
 
   @media(max-width:600px)
   {
