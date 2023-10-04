@@ -62,6 +62,10 @@ button {
   background-color: transparent;
   border: #fff 1px solid;
 }
+.btn-outline:hover {
+  background-color: var(--primaryVariant);
+  border-color: none;
+}
 
 button a {
   color: inherit;
@@ -85,6 +89,17 @@ i {
 .text-center {
   text-align: center;
 }
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letterSpace {
+  letter-spacing: 1px;
+}
+.bold {
+  font-weight: 600;
+}
+
 
 .container .logo img {
   width: 60px;
@@ -102,7 +117,7 @@ i {
 
 .row {
   display: flex;
-  flex-direction: row;
+ flex-direction: row;
   align-items: center;
 }
 
@@ -239,22 +254,21 @@ h1.slide-title {
 }
 
 .potentials {
-  max-width: 90%;
+  max-width: 60%;
   margin: auto;
 
 }
 
 /* GRID SECTION */
 .lessons .container .lessons__grid-one,
-.lessons .container .lessons__grid-two,
-.lessons .container .lessons__grid-three {
+.lessons .container .lessons__grid-two {
   display: flex;
   gap: 3rem;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   width: 100%;
-  margin: 8rem 0;
+  margin: 6rem 0;
 }
 
 .lessons .container .lessons__grid-two {
@@ -274,15 +288,13 @@ h1.slide-title {
 }
 
 .lessons .container .lessons__grid-one p,
-.lessons .container .lessons__grid-two p,
-.lessons .container .lessons__grid-three p {
+.lessons .container .lessons__grid-two p{
   padding: 1rem 0;
 }
 
 /* BE A MEMBER SECTION */
 .beMember {
-  background-image: linear-gradient(rgba(3, 8, 12, 0.35), rgba(11, 13, 28, 0.522)),
-    url(/assets/y.jpg);
+  background: linear-gradient( var(--primary), var(--primaryVariant));
   color: #fff;
   padding: 3rem 0;
   height: 40vh;
@@ -298,11 +310,24 @@ h1.slide-title {
   left: 50%;
   transform: translate(-50%, -50%); */
   grid-template-columns: repeat(3, 1fr);
+  position: relative;
 }
 
+.triangle-down {
+  position: absolute;
+  bottom: -7%;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 20px solid #000;
+}
 .beMember .container .beAMemberText {
   grid-column: 1/3;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .beMember .container .beAMemberButton {
@@ -315,9 +340,9 @@ footer {
 
   background-color: #fff;
   color: var(--primary);
-  font-size: 1rem;
-  padding-bottom: 2rem;
-  margin-top: 4rem;
+  font-size: .9rem;
+  padding-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 footer a {
@@ -326,7 +351,7 @@ footer a {
 
 footer li:hover,
 footer li a:hover {
-  color: #333;
+  color: #000;
 }
 
 .subscribe-input {
@@ -374,7 +399,12 @@ footer li a:hover {
 }
 
 footer .copyright {
-  padding: 3rem 0 2rem;
+  padding: 2rem 0 0;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 /* MOBILE MENU */
@@ -499,5 +529,10 @@ footer .copyright {
   }
   .slide{
     margin-left: 20px;
+  }
+  footer .copyright {
+    gap:.6rem;
+    flex-direction: column;
+    
   }
 }

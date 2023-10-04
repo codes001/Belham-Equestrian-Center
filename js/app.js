@@ -5,6 +5,7 @@ const hamburgerMenu = document.querySelector('.hamburger-menu i')
 const closeBtn = document.querySelector('.closeBtn')
 const submitBtn = document.querySelector('#submitBtn')
 const mobileNav = document.querySelector('#mobileNav')
+const navBtn = document.querySelector('#navBtn')
 const body = document.querySelector('body')
 const username = document.querySelector('#username')
 const email = document.querySelector('#email')
@@ -18,11 +19,13 @@ function fixNav() {
     navLinks.forEach(navLink => {
         if (window.scrollY > header.offsetHeight + 50) {
             header.classList.add('active')
+            navBtn.classList.remove('btn-outline')
             navLink.style.color = '#00637C'
             hamburgerMenu.style.color = '#00637C'
         } else {
             header.classList.remove('active')
             navLink.style.color = '#fff'
+            navBtn.classList.add('btn-outline')
             hamburgerMenu.style.color = '#fff'
         }
         // console.log(navLink, 'Yeee')
