@@ -28,9 +28,16 @@
                 <li><a href="/polo.html">Polo</a></li>
                 <li><a href="/equestrian.html">Equestrian</a></li>
                 <li><a href="/about.html">About Us</a></li>
+                <li><a href="/about.html">Become a member</a></li>
+                
             </ul>
+            <div class="header__socials">
+                <i class="ri-instagram-line"></i>
+                <i class="ri-youtube-line"></i>
+            </div>
             <div class="contact">
-                <button class="btn"><a href="#"><i class="ri-messenger-line"></i> Contact Us</a></button>
+                <button id="navBtn" class=" btn-white"><a href="/contact.html">
+                        CONTACT US </a></button>
             </div>
 
             <div class="hamburger-menu">
@@ -97,10 +104,10 @@
             <!-- Form section -->
             <form class="form"  data-aos="fade-down">
                 <div class="error">Please fill in all input fields *</div>
-                <input type="text" id="username" placeholder="Enter your name">
-                <input type="email" id="email" placeholder="Enter your email">
+                <input type="text" id="username" placeholder="Enter your name" required>
+                <input type="email" id="email" placeholder="Enter your email" required>
                 <textarea id="textarea" cols="50" placeholder="Drop your message"></textarea>
-                <button type="submit" id="submitBtn">Submit</button>
+                <button type="submit" class="brown-outline" id="submitBtn" >Submit</button>
             </form>
         </div>
     </section>
@@ -156,25 +163,14 @@
                         <li><i class="ri-whatsapp-fill"></i>
                             <a href="#">Chat with us!</a>
                         </li>
-                        <li><i class="ri-twitter-fill"></i>
-                            <a href="#">Follow Us</a>
-                        </li>
-                        <li><i class="ri-youtube-fill"></i>
-                            <a href="#">See our activites</a>
-                        </li>
-                        <li><i class="ri-android-fill"></i>
-                            <a href="#">Get our Android App</a>
-                        </li>
-                        <li><i class="ri-apple-fill"></i>
-                            <a href="#">Get our iOS App</a>
-                        </li>
+                       
                     </ul>
                 </div>
                 <div class="links">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><i class="ri-arrow-right-circle-line"></i>
-                            <a href="/index.html">Home</a>
+                            <a href="#">Home</a>
                         </li>
                         <li><i class="ri-arrow-right-circle-line"></i>
                             <a href="/polo.html">Polo</a>
@@ -186,7 +182,7 @@
                             <a href="/about.html">About</a>
                         </li>
                         <li><i class="ri-arrow-right-circle-line"></i>
-                            <a href="#">Contact</a>
+                            <a href="/contact.html">Contact</a>
                         </li>
 
 
@@ -194,7 +190,12 @@
                 </div>
             </div>
         </div>
-        <div class="copyright text-center">&copy; All rights reserved, 2023</div>
+        <div class="copyright text-center row">
+            <div>
+                &copy; All rights reserved, 2023
+            </div>
+            <div>Powered by <a href="https://thefocalleap.com/" target="_blank" >Focalleap Ltd</a></div>
+        </div>
     </footer>
     <!-- SCRIPT -->
     <script src="/js/app.js"></script>

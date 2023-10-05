@@ -6,10 +6,14 @@ const closeBtn = document.querySelector('.closeBtn')
 const submitBtn = document.querySelector('#submitBtn')
 const mobileNav = document.querySelector('#mobileNav')
 const navBtn = document.querySelector('#navBtn')
+const headerSocials = document.querySelectorAll(
+    '.header__socials i'
+)
+
 const body = document.querySelector('body')
 const username = document.querySelector('#username')
 const email = document.querySelector('#email')
-const contactForm = document.querySelector('form')
+const contactForm = document.querySelector('.form')
 const validateInput = document.querySelector('.error')
 
 
@@ -17,18 +21,22 @@ const validateInput = document.querySelector('.error')
 function fixNav() {
 
     navLinks.forEach(navLink => {
+       headerSocials.forEach(socials =>{
         if (window.scrollY > header.offsetHeight + 50) {
             header.classList.add('active')
             navBtn.classList.remove('btn-outline')
             navLink.style.color = '#00637C'
             hamburgerMenu.style.color = '#00637C'
+            socials.style.color = '#00637C'
         } else {
             header.classList.remove('active')
             navLink.style.color = '#fff'
+            socials.style.color = '#fff'
             navBtn.classList.add('btn-outline')
             hamburgerMenu.style.color = '#fff'
         }
         // console.log(navLink, 'Yeee')
+       })
     });
 }
 
@@ -44,19 +52,7 @@ closeBtn.addEventListener('click', () => {
     body.style.overflow = 'scroll'
 })
 
-// IF FORM IS EMPTY WHEN SUBMITING
-contactForm.addEventListener('submit', (e) => {
-   e.preventDefault()
 
-        if (username.value === '' || email.value ==='') {
-            
-            validateInput.style.display = 'block'
-            return false;
-        } else{
-            validateInput.style.display ='none'
-            return true;
-        }
-})
 
 
 // FAQ SECTION

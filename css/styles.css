@@ -45,19 +45,28 @@ section {
 }
 
 
-
+/* BUTTON STYLINGS */
 button {
   background-color: var(--primary);
-  border: none;
-  border-radius: 5px;
+  
+  border: 1px solid #fff;
   color: var(--secondary);
-  padding: .65rem 1.15rem;
+  padding: .65rem 1.35rem;
   width: max-content;
   cursor: pointer;
   font-size: 1rem;
   transition: transform 0.2s ease-in-out;
 }
+.btn-white{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
 
+.btn-white:hover{
+  background-color: #00637c;
+  color: #fff;
+}
 .btn-outline {
   background-color: transparent;
   border: #fff 1px solid;
@@ -66,13 +75,23 @@ button {
   background-color: var(--primaryVariant);
   border-color: none;
 }
-
+.showcaseBtn:hover{
+  transform: scale(1.11);
+  background-color: #4c4c4c;
+}
 button a {
   color: inherit;
 }
 
-button:hover {
-  transform: scale(0.95);
+
+.brown-outline {
+  background-color: transparent;
+  border: 1px rgb(80, 58, 42) solid;
+  color: rgb(80, 58, 42);
+}
+.brown-outline:hover {
+  background-color: rgb(80, 58, 42);
+  color: #fff;
 }
 
 input:focus,
@@ -158,7 +177,10 @@ header {
   transition: .4s ease-in-out;
   z-index: 10;
 }
-
+.header__socials i {
+  color: #fff;
+  font-size: 1.5rem;
+}
 @media(min-width:900px) {
 
 
@@ -167,7 +189,7 @@ header {
     padding: .3rem;
     margin: 0 .4rem;
     position: relative;
-    font-size: 1rem;
+    font-size: .9rem;
     text-transform: uppercase;
   }
 
@@ -221,6 +243,7 @@ header.active header ul li a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border: 1px solid #000;
 }
 
 .slide {
@@ -260,8 +283,18 @@ h1.slide-title {
 }
 
 /* GRID SECTION */
+
+/* IMG animation */
+@keyframes bounce{
+  50%{
+    transform: translateY(5px);
+
+  }
+  100%{transform: translateY(0);}
+}
 .lessons .container .lessons__grid-one,
-.lessons .container .lessons__grid-two {
+.lessons .container .lessons__grid-two,
+.lessons .container .lessons__grid-three {
   display: flex;
   gap: 3rem;
   justify-content: space-between;
@@ -270,13 +303,16 @@ h1.slide-title {
   width: 100%;
   margin: 6rem 0;
 }
-
+.lessons .button{margin-top:10px;}
 .lessons .container .lessons__grid-two {
   flex-direction: row-reverse;
 }
 
 .lessons .container .lessons-pic {
   width: 100%;
+}
+.lessons .container .lessons-pic:hover{
+  animation: bounce 2s ease infinite;
 }
 
 .lessons .container .lessons-txt {
@@ -288,8 +324,10 @@ h1.slide-title {
 }
 
 .lessons .container .lessons__grid-one p,
-.lessons .container .lessons__grid-two p{
+.lessons .container .lessons__grid-two p
+.lessons .container .lessons__grid-three{
   padding: 1rem 0;
+  color: #742d0e;
 }
 
 /* BE A MEMBER SECTION */
@@ -343,6 +381,7 @@ footer {
   font-size: .9rem;
   padding-bottom: 1rem;
   margin-top: 3rem;
+  border-top:  1px solid #ccc;
 }
 
 footer a {
@@ -471,6 +510,7 @@ footer .copyright {
 
   .potentials {
     margin-top: 3rem;
+    max-width: 90%;
   }
 
   h1.slide-title {

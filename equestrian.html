@@ -11,6 +11,7 @@
     <!-- LOCAL CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="/css/equestrian.css">
+    <link rel="stylesheet" href="/css/polo.css">
      <!-- ANIMATE ON SCROLL -->
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Belham Equestrian Centre || Equestrian</title>
@@ -26,11 +27,18 @@
 
             <ul class="row">
                 <li><a href="/polo.html">Polo</a></li>
-                <li><a href="#">Equestrian</a></li>
+                <li><a href="/equestrian.html">Equestrian</a></li>
                 <li><a href="/about.html">About Us</a></li>
+                <li><a href="/about.html">Become a member</a></li>
+                
             </ul>
+            <div class="header__socials">
+                <i class="ri-instagram-line"></i>
+                <i class="ri-youtube-line"></i>
+            </div>
             <div class="contact">
-                <button class="btn"><a href="/contact.html"><i class="ri-messenger-line"></i> Contact Us</a></button>
+                <button id="navBtn" class=" btn-white"><a href="/contact.html">
+                        CONTACT US </a></button>
             </div>
 
             <div class="hamburger-menu">
@@ -63,7 +71,7 @@
                 <h1 class="slide-title">Equestrian
                 </h1>
                 <p>Experience the Thrill of Equestrian Excellence</p>
-                <button class="btn"><a href="#">About Us</a></button>
+               
             </div>
 
         </div>
@@ -74,7 +82,7 @@
         <div class="container">
             <div class="lessons__grid-one">
                 <div class="lessons-pic"  data-aos="fade-down">
-                    <img src="/assets/horse-1.jpg" alt="">
+                    <img src="/assets/rideLessons.jpeg" alt="">
                 </div>
                 <div class="lessons-txt column"  data-aos="fade-down">
                     <h1> Horse Riding Lessons</h1>
@@ -89,7 +97,7 @@
             </div>
             <div class="lessons__grid-two">
                 <div class="lessons-pic"  data-aos="fade-down">
-                    <img src="/assets/horse2.jpg" alt="">
+                    <img src="/assets/trailRides.jpeg" alt="">
                 </div>
                 <div class="lessons-txt column" data-aos="fade-down" >
                     <h1> Trail Rides</h1>
@@ -104,7 +112,7 @@
             </div>
             <div class="lessons__grid-three">
                 <div class="lessons-pic"  data-aos="fade-down">
-                    <img src="/assets/f.jpeg" alt="">
+                    <img src="/assets/groupActivities.jpeg" alt="">
                 </div>
                 <div class="lessons-txt column"  data-aos="fade-down">
                     <h1> Group Activities</h1>
@@ -132,6 +140,101 @@
 
         </div>
 
+    </section>
+     
+
+
+    <!-- MEMBERSHIP PACKAGES -->
+    <section class="membershipPackages">
+
+        <div class="container">
+
+            <h2>Membership Packages
+            </h2>
+            <p>Unlock exclusive benefits and perks at Belham Equestrian Centre.</p>
+
+            <div class="switch-container text-center">
+                <div class='handle one' id='h'></div>
+                <div class='opt activated' id='one'>Single</div>
+                <div class='opt' id='two'>Family</div>
+            </div>
+            <div class='show membershipItem' id='tab-one'>
+                <div class="property">
+                    <h3>Daily</h3>
+                </div>
+                <div class="value">
+                    <p> <b>NGN
+                            10,000 --- </b>
+                        3 chukkers , club horses</p>
+                </div>
+                <div class="property">
+                    <h3>Monthly</h3>
+                </div>
+                <div class="value">
+                    <p> <b>NGN
+                            100,000 --- </b>
+                        3 times a week, club horses</p>
+                </div>
+                <div class="property">
+                    <h3>Yearly</h3>
+                </div>
+                <div class="value">
+                    <p> <b>NGN
+                            500,000 --- </b>
+                        Access to social events and tournaments</p>
+                </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class='show membershipItem' id='tab-two'>
+                <div class="property">
+                    <h3>Daily</h3>
+                </div>
+                <div class="value">
+                    <p> <b>NGN
+                            30,000 --- </b>
+                        3 chukkers , club horses</p>
+                </div>
+                <div class="property">
+                    <h3>Monthly</h3>
+                </div>
+                <div class="value">
+                    <p> <b>NGN
+                            200,000 --- </b>
+                        3 times a week, club horses</p>
+                </div>
+                <div class="property">
+                    <h3>Yearly</h3>
+                </div>
+                <div class="value">
+                    <p> <b>NGN
+                            1,000,000 --- </b>
+                        Access to social events and tournaments</p>
+                </div>
+            </div>
+
+            <button class="btn">
+                <a href="https://drive.google.com/file/d/18e7I9_jJIYbJsKDdPGN6hp1Wwh15PF98/view?pli=1"
+                    target="_blank">Download Form</a>
+            </button>
+        </div>
+    </section>
+
+    <!-- BOOK A RIDE -->
+    <section class="bookRide lessons">
+        <div class="container">
+            <div class="lessons__grid-two">
+                <div class="lessons-pic" data-aos="fade-down">
+                    <img src="/assets/d.jpeg" alt="">
+                </div>
+                <div class="lessons-txt column" data-aos="fade-up">
+                    <h1> Book Your Ride Today</h1>
+                    <p>Ready to embark on a thrilling horse riding experience? Contact us to schedule your lesson, trail ride, or private session. Get ready to create lasting memories and forge a deeper connection with these magnificent creatures. Let’s ride together at Belham Equestrian Centre!
+                    </p>
+                    <button class="btn brown-outline"><a href="#">Become a Memeber</a></button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->
@@ -179,32 +282,20 @@
                         </li>
                         <li><i class="ri-whatsapp-fill"></i>
                             <a href="#">Chat with us!</a>
-                        </li>
-                        <li><i class="ri-twitter-fill"></i>
-                            <a href="#">Follow Us</a>
-                        </li>
-                        <li><i class="ri-youtube-fill"></i>
-                            <a href="#">See our activites</a>
-                        </li>
-                        <li><i class="ri-android-fill"></i>
-                            <a href="#">Get our Android App</a>
-                        </li>
-                        <li><i class="ri-apple-fill"></i>
-                            <a href="#">Get our iOS App</a>
-                        </li>
+                       
                     </ul>
                 </div>
                 <div class="links">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><i class="ri-arrow-right-circle-line"></i>
-                            <a href="/index.html">Home</a>
+                            <a href="#">Home</a>
                         </li>
                         <li><i class="ri-arrow-right-circle-line"></i>
                             <a href="/polo.html">Polo</a>
                         </li>
                         <li><i class="ri-arrow-right-circle-line"></i>
-                            <a href="#">Equestrian</a>
+                            <a href="/equestrian.html">Equestrian</a>
                         </li>
                         <li><i class="ri-arrow-right-circle-line"></i>
                             <a href="/about.html">About</a>
@@ -218,9 +309,48 @@
                 </div>
             </div>
         </div>
-        <div class="copyright text-center">&copy; All rights reserved, 2023</div>
-    </footer>
-    <!-- SCRIPT -->
+        <div class="copyright text-center row">
+            <div>
+                &copy; All rights reserved, 2023
+            </div>
+            <div>Powered by <a href="https://thefocalleap.com/" target="_blank" >Focalleap Ltd</a></div>
+        </div>
+    </footer>   
+    
+     <!-- SCRIPT -->
+    <script>
+        var hndl = document.getElementById("h");
+        var tab1 = document.getElementById("tab-one");
+        var tab2 = document.getElementById("tab-two");
+        var opt1 = document.getElementById("one");
+        var opt2 = document.getElementById("two");
+
+
+        tab1.style.display = 'block'
+        tab2.style.display = 'none'
+        opt1.onclick = function () {
+            opt2.classList.remove("activated");
+            opt1.classList.add("activated");
+            hndl.classList.remove("two");;
+            hndl.classList.add("one")
+            tab2.classList.add("hide");
+            tab1.classList.remove("hide");
+            tab1.style.display = "block";
+            tab2.style.display = "none";
+        };
+
+        opt2.onclick = function () {
+            opt1.classList.remove("activated");
+            opt2.classList.add("activated");
+            hndl.classList.add("one");
+            hndl.classList.add("two");
+            tab1.classList.add("hide");
+            tab2.classList.remove("hide");
+            tab2.style.display = 'block'
+            tab1.style.display = 'none'
+
+        };
+    </script>
     <script src="/js/app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

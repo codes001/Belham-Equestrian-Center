@@ -57,12 +57,18 @@ textarea {
 .contact-area .container .form button {
   width: 100%;
   text-transform: uppercase;
-  padding: 1.8rem 0;
+  padding: 1rem 0;
   font-size: 1.1rem;
   font-weight: 600;
   margin-top: 2rem;
 }
-
+.contact-main i{
+  background-color:rgba(54, 38, 8, 0.75);
+  color: #fff;
+  padding: .7rem 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
 .contact-area .container .contact-details {
   box-shadow: 4px 5px 35px rgba(206, 217, 226, 0.75);
   border-radius: 10px;
